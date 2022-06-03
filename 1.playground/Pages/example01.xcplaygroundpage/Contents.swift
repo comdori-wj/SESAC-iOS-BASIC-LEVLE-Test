@@ -1,10 +1,10 @@
 //example01
 
-
 //1. 회원가입 : 닉네임, 이메일, 나이, 평점, 성별
 //선언 및 초기화
 //타입 추론 : 명시하지 않아도 되는것
 //타입 어노테이션 : 명확하게 명시하는것
+// var: 값이 변하는 변수 let: 값이 고정된 변수
 var nickname = "고래밥"
 var age = 33
 let email:String = "jack@jack.com"
