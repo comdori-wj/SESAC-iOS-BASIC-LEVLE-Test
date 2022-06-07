@@ -2,9 +2,10 @@
 
 //1. 회원가입 : 닉네임, 이메일, 나이, 평점, 성별
 //선언 및 초기화
-//타입 추론 : 명시하지 않아도 되는것
-//타입 어노테이션 : 명확하게 명시하는것
-// var: 값이 변하는 변수 let: 값이 고정된 변수
+//타입 추론 : 명시하지 않아도 되는것 ex) var age 같은거(int)
+//타입 어노테이션 : 명확하게 명시하는것 ex) var rate: Double = 3.3
+// var: 값이 변하는 변수 let: 값이 고정된 상수
+
 var nickname = "고래밥"
 var age = 33
 let email:String = "jack@jack.com"
@@ -24,3 +25,5 @@ rate = 3.5
 print("안녕하세요 \(nickname)입니다. 저는 \(age)살이고 이메일은 \(email)입니다.")
 print(gender)
 print(rate)
+
+print("타입 추론 종류:" , type(of: rate))
