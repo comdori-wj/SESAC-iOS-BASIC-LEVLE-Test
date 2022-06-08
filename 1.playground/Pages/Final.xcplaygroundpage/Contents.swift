@@ -23,11 +23,11 @@ print("나누기 ", 7%2)
 
 let scoreArray = [180, 270,240,300,90,120]
 
-var bestArray: [Int] = []
+var bestArray: [Int] = [] //빈 배열은 반드시 타입 어노테이션이 명시 되어야한다.
 
 for i in scoreArray {
 
-    if i >= 200 {
+    if i >= 200 { //200점 이상일때만
         bestArray.append(i)
     }
 }
@@ -40,16 +40,32 @@ if bestArray.contains(300) {
 }
 
 //응용 3. 투표수 집계
-let voteArray = ["명수", "명수", "준하", "명수", "준하", "명수", "준하", "명수"]
+let voteArray = ["명수", "명수", "준하", "명수", "준하", "명수", "준하", "명수", "준하"]
 var resultParkCount = 0
-
+var resultJungCount = 0
+var win: String = ""
 for i in voteArray {
     if i == "명수" {
         resultParkCount = resultParkCount+1
     }
+
+    else if i == "준하" {
+            resultJungCount = resultJungCount+1
+        }
+    if resultParkCount < resultJungCount {
+        win = "준하"
+    }
+    else if resultParkCount > resultJungCount {
+        win = "명수"
+    }
+    else {
+        win = "동점"
+    }
 }
 
 print("명수가 \(resultParkCount)표 얻었습니다.")
+print("준하가 \(resultJungCount)표 얻었습니다.")
+print("투표 결과 \(win)가 이겼습니다.")
 
 // 응용4. 국가별 영화 출력
 var movie: [String: [String]] = ["한국":["신과 함께", "명량", "괴물"], "일본":["나는 어제의 너와 만난다", "너의 이름은"]]
