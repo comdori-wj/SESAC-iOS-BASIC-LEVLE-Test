@@ -9,6 +9,8 @@ var student: [Int:String] = [1001:"홍길동", 1002:"김영희"]
 
 student[1003] = "김철수"
 student[1001] = "김민수"
-student.updateValue("whs", forKey: 1004)
+student.updateValue("존", forKey: 1004)
+print(student)
+
 student.removeValue(forKey: 1004)
 print(student)

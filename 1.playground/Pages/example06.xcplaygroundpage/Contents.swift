@@ -8,6 +8,7 @@ print(album)
 
 album.remove(at: 0)
 
+// !는 조심해서 사용(옵셔널 이라고 한다)
 print(album)
 print("==")
 print(album[2])

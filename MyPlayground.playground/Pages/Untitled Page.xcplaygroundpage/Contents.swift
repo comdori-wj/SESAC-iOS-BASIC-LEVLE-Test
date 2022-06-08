@@ -6,3 +6,5 @@ for i in 1...9 {
 }
 
 //
+let input = readLine()
+print("입력하세요: ", type(of: input))

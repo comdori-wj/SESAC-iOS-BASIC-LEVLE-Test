@@ -22,8 +22,8 @@ if order >= 0 && order < 5{
 // BMI지수 = 몸무게(kg) / (신장(m) x 신장(m))
 // 18.5이하 저체중, 18.5~23 정상, 23~25 과체중, 25~30 비만, 30이상 고도비만
 
-var weight: Double = 82.9
-var height = 1.66
+var weight: Double = 70
+var height = 1.8
 var bmi = weight / (height * height)
 
 print(bmi)

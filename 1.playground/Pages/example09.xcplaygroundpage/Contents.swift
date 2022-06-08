@@ -19,7 +19,7 @@ if weight > 15 {
 // 부모님 동의가 필요한 회원가입
 var age = Int.random(in: 5...50)
 
-if age >= 14 {
+if age >= 14 { // >= :이상일때 , <= 이하일때
     print("\(age)살이므로, 부모님 동의 없이 가입할 수 있습니다")
 } else {
     print("\(age)살, 부모님의 동의가 필요합니다")
